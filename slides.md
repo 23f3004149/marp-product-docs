@@ -85,18 +85,10 @@ Our custom theme defines:
 
 ---
 
----
+<!-- _backgroundImage: "https://picsum.photos/800/600" -->
+# Background Image Slide
 
-<!-- _backgroundImage: "https://picsum.photos/1600/900" -->
-<!-- _class: lead -->
-
-# Visual Design with Background Images
-
-- Clean backgrounds  
-- Good for hero slides  
-- Branding support  
-
----
+This slide has a background image.
 
 ---
 
