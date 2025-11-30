@@ -5,16 +5,11 @@ paginate: true
 theme: custom-tech
 ---
 
-<!-- theme: custom-tech -->
-<!-- paginate: true -->
+<!-- _class: lead -->
 
 <style>
-@import "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css";
-
 section { font-family: Arial, sans-serif; }
-
 h1 { color: #1e90ff; }
-
 section::after {
   content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
   position: absolute;
@@ -34,36 +29,35 @@ section::after {
 
 # Documentation Strategy
 
-- Git-friendly  
 - Markdown-first  
-- Export to PDF/HTML/PPTX  
-- Custom theme  
-- Automation-ready  
+- Git-friendly  
+- Custom styles  
+- Theme support  
+- Automated exports  
 
 ---
 
-<!-- class: lead -->
+<!-- _class: lead -->
 
 # Why Marp?
 
-- Markdown → Slides  
+- Markdown → slides  
 - Supports:
-  - Themes  
   - Backgrounds  
+  - Themes  
   - Directives  
   - Math  
-  - Code  
 
 ---
 
 # Algorithmic Complexity
 
 \[
-T(n)=2T\left(\frac{n}{2}\right) + O(n)
+T(n)=2T(n/2) + O(n)
 \]
 
 \[
-T(n)=O(n \log n)
+T(n)=O(n\log n)
 \]
 
 ---
@@ -72,4 +66,4 @@ T(n)=O(n \log n)
 
 ```python
 def hello():
-    return "Hello world"
+    return "Hello World"
