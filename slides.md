@@ -8,7 +8,7 @@ class: lead
 ---
 
 <!--
-Custom Theme Definition (inline in the same file)
+Custom Theme Definition (inline)
 -->
 <style>
 /* ===============================
@@ -35,7 +35,7 @@ footer {
   font-size: 0.7em;
 }
 
-/* Page number style */
+/* Page numbers */
 section::after {
   content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
   position: absolute;
@@ -46,9 +46,12 @@ section::after {
 }
 </style>
 
-<!-- ===============================
- Slide 1
-================================= -->
+---
+
+<!--
+theme: custom-tech
+class: lead
+-->
 
 # **Product Documentation**
 ### Creating Maintainable, Version-Controlled Docs  
@@ -56,64 +59,45 @@ section::after {
 
 ---
 
-<!-- ===============================
- Slide 2 — Background Image
-================================= -->
-
 ![bg](https://images.unsplash.com/photo-1555066931-4365d14bab8c)
 
 # Documentation Strategy  
 ### Build Once → Publish Everywhere
 
 - Markdown-first workflow  
-- Version-controlled documentation  
-- Automated exports (PDF, HTML, PPTX)  
-- Style consistency using a **custom Marp theme**
+- Version-controlled docs  
+- Automated exports (PDF/HTML/PPTX)  
+- Custom reusable **Marp theme**
 
 ---
 
-<!-- ===============================
- Slide 3 — Why Marp
-================================= -->
-
 # Why Marp?
 
-- Markdown → Slides (HTML/PDF/PPTX)
-- CI/CD friendly
-- Version-controlled documentation
+- Markdown → Slides  
+- CI/CD friendly  
+- Version-controlled  
 - Supports:
   - Custom themes  
   - Backgrounds  
   - Directives  
   - Math  
   - Syntax highlighting  
-  - Speaker notes  
 
 ---
 
-<!-- ===============================
- Slide 4 — Math Example
-================================= -->
-
 # Algorithmic Complexity  
-
-Time complexity of merge sort:
 
 \[
 T(n)=2T\left(\frac{n}{2}\right) + O(n)
 \]
 
-Using Master Theorem:
+By Master Theorem:
 
 \[
 T(n)=O(n \log n)
 \]
 
 ---
-
-<!-- ===============================
- Slide 5 — Code Snippet
-================================= -->
 
 # Example Code Snippet
 
