@@ -11,13 +11,9 @@ theme: custom-tech
 <style>
 @import "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css";
 
-section {
-  font-family: Helvetica, Arial, sans-serif;
-}
+section { font-family: Arial, sans-serif; }
 
-h1 {
-  color: #1e90ff;
-}
+h1 { color: #1e90ff; }
 
 section::after {
   content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
@@ -38,11 +34,11 @@ section::after {
 
 # Documentation Strategy
 
-- Markdown-first workflow  
-- Version-controlled documentation  
+- Git-friendly  
+- Markdown-first  
 - Export to PDF/HTML/PPTX  
-- Custom Marp theme  
-- Portable & maintainable  
+- Custom theme  
+- Automation-ready  
 
 ---
 
@@ -51,13 +47,12 @@ section::after {
 # Why Marp?
 
 - Markdown → Slides  
-- Git-friendly  
-- CI/CD automation  
 - Supports:
   - Themes  
   - Backgrounds  
   - Directives  
   - Math  
+  - Code  
 
 ---
 
