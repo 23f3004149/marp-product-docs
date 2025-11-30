@@ -39,9 +39,10 @@ section::after {
 # Documentation Strategy
 
 - Markdown-first workflow  
-- Version-controlled docs  
-- Automated exports  
-- Reusable custom theme  
+- Version-controlled documentation  
+- Export to PDF/HTML/PPTX  
+- Custom Marp theme  
+- Portable & maintainable  
 
 ---
 
@@ -50,8 +51,8 @@ section::after {
 # Why Marp?
 
 - Markdown → Slides  
-- CI/CD automation  
 - Git-friendly  
+- CI/CD automation  
 - Supports:
   - Themes  
   - Backgrounds  
