@@ -29,11 +29,11 @@ section::after {
 
 # Documentation Strategy
 
-- Markdown-first  
-- Git-friendly  
-- Custom styles  
-- Theme support  
-- Automated exports  
+- Git versioning  
+- Markdown-first workflow  
+- Custom styling  
+- Export as HTML / PDF / PPTX  
+- Custom theme support  
 
 ---
 
@@ -41,23 +41,27 @@ section::after {
 
 # Why Marp?
 
-- Markdown → slides  
-- Supports:
-  - Backgrounds  
-  - Themes  
-  - Directives  
-  - Math  
+- Markdown → Slides  
+- Background images  
+- Themes  
+- Marp directives  
+- Math equations (LaTeX)  
+- Declarative styling  
 
 ---
 
-# Algorithmic Complexity
+# Algorithmic Complexity (LaTeX Math)
+
+The recurrence relation for merge sort is:
 
 \[
-T(n)=2T(n/2) + O(n)
+T(n) = 2T\left(\frac{n}{2}\right) + O(n)
 \]
 
+Solving using the Master Theorem:
+
 \[
-T(n)=O(n\log n)
+T(n) = O(n \log n)
 \]
 
 ---
@@ -65,5 +69,10 @@ T(n)=O(n\log n)
 # Example Code
 
 ```python
-def hello():
-    return "Hello World"
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    return merge(left, right)
