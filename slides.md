@@ -1,101 +1,127 @@
 ---
 marp: true
-theme: custom-theme
+title: Product Documentation Presentation
+description: Maintainable developer documentation using Marp
 paginate: true
-_paginate: true
+theme: custom-tech
+class: lead
 ---
 
+<!--
+Custom Theme Definition (inline in the same file)
+-->
 <style>
-/* @theme custom-theme */
+/* ===============================
+   Custom Marp Theme: custom-tech
+================================*/
+@import "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css";
 
 section {
-  font-family: Arial, sans-serif;
-  background: #0b1020;
-  color: #ffffff;
-  padding: 40px;
+  font-family: "Segoe UI", sans-serif;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+h1 {
+  color: #1e90ff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-.lead {
-  text-align: center;
+h2 {
+  color: #ffa500;
 }
 
-.small {
-  font-size: 0.8em;
-  opacity: 0.85;
+footer {
+  color: #666;
+  font-size: 0.7em;
 }
 
-.footer-note {
+/* Page number style */
+section::after {
+  content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
   position: absolute;
   bottom: 10px;
-  left: 40px;
-  font-size: 0.7em;
-  opacity: 0.7;
+  right: 20px;
+  font-size: 0.75em;
+  color: #888;
 }
 </style>
 
-<!-- _class: lead -->
+<!-- ===============================
+ Slide 1
+================================= -->
 
-# Product Documentation with Marp
-
-### Maintainable, Versioned, Multi-format Docs
-
-**Author:** Vaibhav  
-**Email:** 23f3004149@ds.study.iitm.ac.in
+# **Product Documentation**
+### Creating Maintainable, Version-Controlled Docs  
+#### Author: **23f3004149@ds.study.iitm.ac.in**
 
 ---
 
-<!-- _class: lead -->
+<!-- ===============================
+ Slide 2 — Background Image
+================================= -->
+
+![bg](https://images.unsplash.com/photo-1555066931-4365d14bab8c)
+
+# Documentation Strategy  
+### Build Once → Publish Everywhere
+
+- Markdown-first workflow  
+- Version-controlled documentation  
+- Automated exports (PDF, HTML, PPTX)  
+- Style consistency using a **custom Marp theme**
+
+---
+
+<!-- ===============================
+ Slide 3 — Why Marp
+================================= -->
 
 # Why Marp?
 
-- Write docs **as code**
-- Version-control friendly  
-- Export to:
-  - PDF
-  - PPTX
-  - HTML  
-- Great for engineering teams
+- Markdown → Slides (HTML/PDF/PPTX)
+- CI/CD friendly
+- Version-controlled documentation
+- Supports:
+  - Custom themes  
+  - Backgrounds  
+  - Directives  
+  - Math  
+  - Syntax highlighting  
+  - Speaker notes  
 
 ---
 
-## Documentation as Code
+<!-- ===============================
+ Slide 4 — Math Example
+================================= -->
 
-- Store slides in a **Git repo**  
-- Review with **pull requests**  
-- Automatically convert formats  
-- Easy collaboration  
+# Algorithmic Complexity  
 
----
+Time complexity of merge sort:
 
-## Custom Theme Overview
+\[
+T(n)=2T\left(\frac{n}{2}\right) + O(n)
+\]
 
-Our custom theme defines:
+Using Master Theorem:
 
-- Dark background  
-- Light text for contrast  
-- System UI fonts  
-- Utility classes:
-  - `.lead`
-  - `.small`
-  - `.footer-note`
+\[
+T(n)=O(n \log n)
+\]
 
 ---
 
-<!-- _backgroundImage: "https://picsum.photos/800/600" -->
-# Background Image Slide
+<!-- ===============================
+ Slide 5 — Code Snippet
+================================= -->
 
-This slide has a background image.
+# Example Code Snippet
 
----
-
-## Page Numbers
-
-Enabled via front-matter:
-
-```yaml
-paginate: true
-_paginate: true
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    return merge(left, right)
