@@ -85,15 +85,18 @@ Our custom theme defines:
 
 ---
 
-<!-- _backgroundImage: url("https://picsum.photos/1600/900?blur=3") -->
+---
+
+<!-- _backgroundImage: "https://picsum.photos/1600/900" -->
 <!-- _class: lead -->
 
 # Visual Design with Background Images
 
-- Marp supports background images  
-- Useful for hero sections  
-- Helps brand your documentation  
-- Clean & professional look  
+- Clean backgrounds  
+- Good for hero slides  
+- Branding support  
+
+---
 
 ---
 
