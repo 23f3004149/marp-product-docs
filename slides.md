@@ -7,9 +7,10 @@ theme: custom-tech
 class: lead
 ---
 
-<!--
-Custom Theme Definition (inline)
--->
+<!-- theme: custom-tech -->
+<!-- class: lead -->
+<!-- paginate: true -->
+
 <style>
 /* ===============================
    Custom Marp Theme: custom-tech
@@ -46,13 +47,6 @@ section::after {
 }
 </style>
 
----
-
-<!--
-theme: custom-tech
-class: lead
--->
-
 # **Product Documentation**
 ### Creating Maintainable, Version-Controlled Docs  
 #### Author: **23f3004149@ds.study.iitm.ac.in**
@@ -65,23 +59,25 @@ class: lead
 ### Build Once → Publish Everywhere
 
 - Markdown-first workflow  
-- Version-controlled docs  
+- Version-controlled documentation  
 - Automated exports (PDF/HTML/PPTX)  
-- Custom reusable **Marp theme**
+- Custom **Marp theme**
 
 ---
+
+<!-- class: lead -->
 
 # Why Marp?
 
 - Markdown → Slides  
-- CI/CD friendly  
 - Version-controlled  
+- CI/CD friendly  
 - Supports:
-  - Custom themes  
+  - Themes  
   - Backgrounds  
   - Directives  
   - Math  
-  - Syntax highlighting  
+  - Code highlight  
 
 ---
 
@@ -90,8 +86,6 @@ class: lead
 \[
 T(n)=2T\left(\frac{n}{2}\right) + O(n)
 \]
-
-By Master Theorem:
 
 \[
 T(n)=O(n \log n)
