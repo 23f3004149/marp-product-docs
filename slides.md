@@ -60,6 +60,13 @@ section.content-slide {
   background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
 }
 
+section.security-slide {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                    url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2NzUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAgTSAwIDIwIEwgNDAgMjAgTSAyMCAwIEwgMjAgNDAgTSAwIDMwIEwgNDAgMzAgTSAzMCAwIEwgMzAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMzMzMzMyIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2NzUiIGZpbGw9IiMxYTFhMmUiLz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2NzUiIGZpbGw9InVybCgjZ3JpZCkiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjEwMCIgZmlsbD0iIzY2N2VlYSIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iOTAwIiBjeT0iNDAwIiByPSIxNTAiIGZpbGw9IiM3NjRiYTIiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01MDAgMTAwIEwgNTUwIDIwMCBMIDQ1MCAyMDAgWiIgZmlsbD0iI2ZmZDcwMCIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTcwMCAzMDAgTCA3NTAgNDAwIEwgNjUwIDQwMCBaIiBmaWxsPSIjZmZkNzAwIiBvcGFjaXR5PSIwLjEiLz48L3N2Zz4=');
+  background-size: cover;
+  background-position: center;
+}
+
 section blockquote {
   border-left: 4px solid #ffd700;
   padding-left: 20px;
@@ -176,7 +183,6 @@ gateway:
 
 ---
 
-<!-- backgroundColor: #1a202c -->
 <!-- _class: content-slide -->
 
 ## Authentication Flow
@@ -193,31 +199,7 @@ sequenceDiagram
 
 ---
 
-<!-- backgroundImage: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200') -->
-<!-- _color: white -->
-<!-- _header: '' -->
-<!-- _footer: '' -->
-
-<style scoped>
-section {
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
-}
-section h1, section ul {
-  position: relative;
-  z-index: 1;
-}
-</style>
+<!-- _class: security-slide -->
 
 # Security Best Practices
 
