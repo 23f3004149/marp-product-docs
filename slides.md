@@ -1,19 +1,13 @@
 ---
 marp: true
 theme: mytheme
-paginate: true
-headingDivider: 2
 title: "Product Documentation – Architecture Overview"
+paginate: true
 author: "Vaibhav (23f3004149@ds.study.iitm.ac.in)"
 ---
 
-<!--
-Marp directives required by checker
-These count as explicit Marp directives inside HTML comments.
--->
-<!-- marp: true -->
-<!-- theme: mytheme -->
-<!-- paginate: true -->
+<!-- _paginate: true -->
+<!-- _theme: mytheme -->
 
 <style>
 @theme mytheme {
@@ -36,7 +30,7 @@ These count as explicit Marp directives inside HTML comments.
     bottom: 20px;
     right: 30px;
     font-size: 0.8rem;
-    color: #666;
+    color: #888;
   }
 }
 </style>
@@ -48,6 +42,7 @@ Email: **23f3004149@ds.study.iitm.ac.in**
 ---
 
 # Agenda
+<!-- _class: lead -->
 - Product overview  
 - Architecture  
 - Workflow  
@@ -56,17 +51,15 @@ Email: **23f3004149@ds.study.iitm.ac.in**
 
 ---
 
-<!-- background image slide -->
-![bg](https://images.unsplash.com/photo-1518770660439-4636190af475)
+<!-- _backgroundImage: "https://images.unsplash.com/photo-1518770660439-4636190af475" -->
+<!-- _backgroundSize: cover -->
 
 # System Architecture
-Background image applied using Marp.
+This slide uses a background image via Marp directive.
 
 ---
 
 # Algorithmic Complexity
-
-Binary Search:
 
 \[
 T(n) = T\left(\frac{n}{2}\right) + O(1)
