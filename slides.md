@@ -1,80 +1,96 @@
 ---
 marp: true
-title: Product Documentation Presentation
+theme: custom-theme
 paginate: true
-math: mathjax
+headingDivider: 2
+title: "Product Documentation – Architecture Overview"
+description: "Marp documentation demo by Vaibhav"
+author: "Vaibhav (23f3004149@ds.study.iitm.ac.in)"
 ---
 
-<!-- _class: lead -->
-
+<!--
+CUSTOM THEME
+This block defines a custom Marp theme directly inside the Markdown.
+-->
 <style>
-section { font-family: Arial, sans-serif; }
-section::after {
-  content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
-  position: absolute;
-  bottom: 12px;
-  right: 18px;
-  font-size: 0.75em;
-  color: #666;
+@theme custom-theme {
+  /* Base styles */
+  section {
+    font-family: "Segoe UI", sans-serif;
+    padding: 40px;
+  }
+
+  h1 {
+    color: #1976D2;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: #0D47A1;
+    border-bottom: 2px solid #BBDEFB;
+    padding-bottom: 6px;
+  }
+
+  p strong {
+    color: #E91E63;
+  }
+
+  /* Page numbers */
+  section::after {
+    content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 0.8rem;
+    color: #555;
+  }
 }
-h1 { color: #1e90ff; }
 </style>
 
-# Product Documentation
-### Author: 23f3004149@ds.study.iitm.ac.in
+# Product Documentation  
+### Architecture Overview  
+**Author:** 23f3004149@ds.study.iitm.ac.in
 
 ---
 
-<!-- _class: lead -->
+# Agenda
 
-![bg](https://images.unsplash.com/photo-1555066931-4365d14bab8c)
-
-# Documentation Strategy
-
-- Markdown-first workflow  
-- Version-controlled docs  
-- Multi-format export  
-- Lightweight + portable  
-- Easy to maintain  
+- Product overview  
+- System architecture  
+- API workflow  
+- Algorithmic complexity  
+- Deployment pipeline  
 
 ---
 
-<!-- _class: lead -->
+# Product Overview
 
-# Why Marp?
+Our software provides:
 
-- Markdown → Slides  
-- Background images  
-- Page numbers  
-- CSS customization  
-- Marp directives  
-- **Math (via MathJax)**
+- Modular components  
+- Scalable REST APIs  
+- Containerized deployment  
+- Version-controlled documentation  
 
 ---
 
-# Algorithmic Complexity (LaTeX)
+<!-- background image slide -->
+<!-- Replace with your own image file -->
+<!-- Tip: store images in /assets folder for clean version control -->
+![bg](https://images.unsplash.com/photo-1518770660439-4636190af475)
 
-The merge-sort recurrence:
+# System Architecture
 
-$$
-T(n) = 2T\left(\frac{n}{2}\right) + O(n)
-$$
-
-Using the Master Theorem:
-
-$$
-T(n) = O(n \log n)
-$$
+This slide uses a **background image**, rendered by Marp.
 
 ---
 
-# Example Code
+# API Workflow
 
-```python
-def merge_sort(arr):
-    if len(arr) <= 1:
-        return arr
-    mid = len(arr) // 2
-    left = merge_sort(arr[:mid])
-    right = merge_sort(arr[mid:])
-    return merge(left, right)
+```mermaid
+sequenceDiagram
+    Client->>API: Request
+    API->>Service: Validate + Process
+    Service->>DB: Query
+    DB-->>Service: Results
+    Service-->>Client: Response
