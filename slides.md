@@ -47,11 +47,16 @@ FalconDB is a high-performance distributed database designed for real-time analy
 
 ---
 
-# Algorithmic Complexity
+# Algorithmic Complexity (Math Included)
 
-\[
-T(n) = O(n \log n)
-\]
+Inline Math Example:  
+The time complexity is **$T(n)=O(n \log n)$**.
+
+Block Math Example:
+
+$$
+C(n) = n^2 + 3n + 2
+$$
 
 ---
 
