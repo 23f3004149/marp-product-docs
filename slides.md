@@ -1,82 +1,54 @@
 ---
 marp: true
-theme: mytheme
-title: "Product Documentation – Architecture Overview"
+theme: custom-tech
 paginate: true
-author: "Vaibhav (23f3004149@ds.study.iitm.ac.in)"
+_paginate: false
+header: "Product Documentation – Internal Draft"
+footer: "Email: 23f3004149@ds.study.iitm.ac.in"
 ---
 
-<!-- _paginate: true -->
-<!-- _theme: mytheme -->
-
+<!-- Custom Theme -->
 <style>
-@theme mytheme {
-  section {
-    font-family: "Segoe UI", sans-serif;
-    padding: 40px;
-  }
-  h1 {
-    color: #1a73e8;
-    font-weight: bold;
-  }
-  h2 {
-    color: #0d47a1;
-    border-bottom: 2px solid #90caf9;
-    padding-bottom: 4px;
-  }
-  section::after {
-    content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-    font-size: 0.8rem;
-    color: #888;
-  }
+section {
+  font-family: "Segoe UI", sans-serif;
 }
+
+h1, h2, h3 {
+  color: #0d47a1;
+}
+
+code {
+  background: #f3f3f3;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+img.bg {
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+footer {
+  font-size: 0.7rem;
+  color: #555;
+}
+
 </style>
 
-# Product Documentation  
-### Architecture Overview  
-Email: **23f3004149@ds.study.iitm.ac.in**
+# **Product Documentation Overview**
+## Technical Writer – Internal Presentation  
+**Email:** 23f3004149@ds.study.iitm.ac.in
 
 ---
 
-# Agenda
-<!-- _class: lead -->
-- Product overview  
-- Architecture  
-- Workflow  
-- Complexity equations  
-- Deployment  
+# **Objectives**
+- Create maintainable, version-controlled documentation  
+- Auto-convert to HTML, PDF, PPTX  
+- Ensure consistent styles using **Marp custom theme**
 
 ---
 
-<!-- _backgroundImage: "https://images.unsplash.com/photo-1518770660439-4636190af475" -->
-<!-- _backgroundSize: cover -->
-
-# System Architecture
-This slide uses a background image via Marp directive.
-
----
-
-# Algorithmic Complexity
-
-\[
-T(n) = T\left(\frac{n}{2}\right) + O(1)
-\]
-
-\[
-\Rightarrow T(n) = O(\log n)
-\]
-
----
-
-# API Workflow
-
-```mermaid
-sequenceDiagram
-Client->>API: Request
-API->>Service: Process
-Service->>DB: Query
-DB-->>Service: Result
-Service-->>Client: Response
+# **Architecture**
+- Markdown-based documentation  
+- Build pipeline:  
