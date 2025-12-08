@@ -25,15 +25,18 @@ footer {
 }
 </style>
 
+<!-- 🔥 VALID MARP DIRECTIVE -->
+<!-- _class: lead -->
+
 # Product Documentation  
 Email: **23f3004149@ds.study.iitm.ac.in**
 
 ---
 
 ## Documentation Goals
-- Git-based workflow  
+- Version control  
 - Multi-format export  
-- Custom themes  
+- Theming & consistency  
 
 ---
 
@@ -45,12 +48,12 @@ T(n) = O(n \log n)
 
 ---
 
-<!-- 🔥 GUARANTEED WORKING BACKGROUND SLIDE -->
+<!-- 🔥 THIS IS THE VALID BACKGROUND IMAGE SLIDE -->
 # Documentation Workflow
 
 ![bg](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
 
-- Git-based editing  
+- Git workflow  
 - CI/CD builds  
 - Marp export  
 
