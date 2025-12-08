@@ -5,22 +5,19 @@ theme: tech-theme
 footer: "Email: 23f3004149@ds.study.iitm.ac.in"
 ---
 
-<!--
-This is the custom theme required by the question.
--->
+<!-- Custom Marp Theme -->
 <style>
 /* @theme tech-theme */
 section {
   font-family: "Segoe UI", sans-serif;
   padding: 40px;
-  font-size: 28px;
 }
 h1, h2 {
   color: #0d47a1;
 }
 code {
   background: #f2f2f2;
-  padding: 4px 8px;
+  padding: 4px 6px;
   border-radius: 4px;
 }
 footer {
@@ -28,27 +25,23 @@ footer {
 }
 </style>
 
-# Product Documentation Overview  
-**Technical Writer Presentation**  
-Email: 23f3004149@ds.study.iitm.ac.in
+# Product Documentation Overview
+Email: **23f3004149@ds.study.iitm.ac.in**
 
 ---
 
-## Goals
-- Version-controlled docs (GitHub)
-- Auto-convert Markdown → PDF/HTML/PPTX  
-- Use Marp for consistency  
-- Define custom theming
+## Documentation Goals
+- Version-controlled  
+- Multi-format export  
+- Custom Marp theme  
 
 ---
 
-## Algorithmic Complexity Example
+## Algorithmic Complexity
 
 \[
 T(n) = O(n \log n)
 \]
-
-This reflects indexing/processing operations in documentation build pipelines.
 
 ---
 
@@ -58,16 +51,20 @@ backgroundSize: cover
 backgroundOpacity: 0.25
 ---
 
-# Documentation Workflow (With Background Image)
+# Documentation Workflow  
+*(Background image visible in Marp export)*
 
-- Git-based editing  
-- Automated builds  
-- CI/CD for exporting formats  
-- Review loops inside version control  
+### And also visible in raw Markdown:
+
+![Workflow Background](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
+
+- Git-based workflow  
+- CI/CD builds  
+- Marp export  
 
 ---
 
-## Build Command Example
+## Build Command
 
 ```bash
 marp slides.md --html --pdf --pptx
