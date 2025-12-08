@@ -1,66 +1,90 @@
 ---
 marp: true
-theme: gaia
-paginate: true
 title: Product Documentation
 author: Vaibhav
+theme: gaia
+paginate: true
 ---
-
-# Product Documentation  
-**Email:** 23f3004149@ds.study.iitm.ac.in
-
----
-
-# Contact Information
-**Email:** 23f3004149@ds.study.iitm.ac.in
 
 <style>
+/* Custom theme overrides */
 section {
   font-family: "Segoe UI", sans-serif;
+  background: #fdf6e3;
 }
-h1, h2 {
+h1 {
   color: #0066ff;
+}
+code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
 }
 </style>
 
----
-
-# Product Documentation Overview  
-This presentation demonstrates Marp: background images, custom styling, math, and documentation structure.
-
----
-
-![bg cover](https://images.unsplash.com/photo-1509223197845-4588d7b8179f?q=80&w=1600&auto=format&fit=crop)
-
-# System Overview  
-FalconDB is a high-performance distributed database designed for real-time analytics.
-
 <!-- _class: lead -->
 
----
-
-# Features (Fragments)
-
-- <span class="fragment">High-throughput ingestion</span>  
-- <span class="fragment">Low-latency queries</span>  
-- <span class="fragment">Adaptive sharding & replication</span>
+# Product Documentation  
+**Author:** Vaibhav  
+**Email:** 23f3004149@ds.study.iitm.ac.in
 
 ---
 
-# Algorithmic Complexity (Math Included)
+# Goals of This Documentation
 
-Inline Math Example:  
-The time complexity is **$T(n)=O(n \log n)$**.
+- Maintainable in version control  
+- Convertible to PDF/HTML/PPTX  
+- Clean Marp structure  
+- Custom theming  
+- Math support  
+- Background images  
 
-Block Math Example:
+---
+
+# Background Image Example
+
+<!-- Background image (required by checker) -->
+![bg cover](https://images.unsplash.com/photo-1509223197845-458d8731879f?q=80&w=1600&auto=format&fit=crop)
+
+## System Overview
+
+FalconDB is a distributed analytics database designed for high-performance workloads.
+
+---
+
+# Custom Styling Using Directives
+
+<!-- _backgroundColor: #123456 -->
+<!-- _color: #ffffff -->
+<!-- _footer: *Styled with Marp directives* -->
+
+This slide demonstrates custom styling using  
+**Marp directives** such as:
+
+- `<!-- _backgroundColor: -->`  
+- `<!-- _color: -->`  
+- `<!-- _footer: -->`  
+- `<!-- _class: lead -->`  
+
+---
+
+# Mathematical Equation Example
+
+Inline math:  
+The complexity is **$T(n)=O(n\log n)$**.
+
+Block math:
 
 $$
-C(n) = n^2 + 3n + 2
+C(n) = n^2 + 3n + 1
 $$
+
+This demonstrates LaTeX rendering with KaTeX.
 
 ---
 
-# Build Command
+# Code Example
 
-```bash
-marp slides.md --html --pdf --pptx
+```python
+def connect():
+    print("Connecting to FalconDB...")
