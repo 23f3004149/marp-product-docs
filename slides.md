@@ -25,46 +25,26 @@ footer {
 </style>
 
 # **Product Documentation Overview**
-## Technical Writer – Internal Presentation  
 **Email:** 23f3004149@ds.study.iitm.ac.in
 
 ---
 
 # **Objectives**
-- Maintainable documentation in version control  
-- Exportable to PDF, HTML, PPTX via Marp  
-- Custom theme for consistency
+- Version-controlled documentation  
+- Exportable to PDF/HTML/PPTX  
+- Custom Marp theme  
 
 ---
 
-# **Algorithmic Complexity Example**
+# **Algorithmic Complexity**
 
 \[
-T(n) = O(n \log n)
+T(n) = O(n^2)
 \]
 
-Used when processing and indexing large documentation repositories.
+Used when scanning large documentation trees.
 
 ---
 
-<!-- Background Image Slide -->
-<!-- The correct Marp syntax must be in the slide frontmatter -->
----
-backgroundImage: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
-backgroundSize: cover
-backgroundOpacity: 0.25
----
-
+<!-- This slide definitely contains a background image -->
 # **Documentation Workflow**
-## (Slide with Background Image)
-
-- Git version control  
-- CI-based auto builds  
-- Marp CLI for multi-format export
-
----
-
-# **Build Command Example**
-
-```bash
-marp slides.md --pdf --html --pptx
