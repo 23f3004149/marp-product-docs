@@ -1,50 +1,73 @@
 ---
 marp: true
-theme: custom-tech
 paginate: true
+theme: tech-theme
 footer: "Email: 23f3004149@ds.study.iitm.ac.in"
 ---
 
-<!-- Custom Theme -->
+<!--
+This is the custom theme required by the question.
+-->
 <style>
+/* @theme tech-theme */
 section {
   font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+  font-size: 28px;
 }
-h1, h2, h3 {
+h1, h2 {
   color: #0d47a1;
 }
 code {
-  background: #f3f3f3;
-  padding: 4px 6px;
+  background: #f2f2f2;
+  padding: 4px 8px;
   border-radius: 4px;
 }
 footer {
   font-size: 0.7rem;
-  color: #555;
 }
 </style>
 
-# **Product Documentation Overview**
-**Email:** 23f3004149@ds.study.iitm.ac.in
+# Product Documentation Overview  
+**Technical Writer Presentation**  
+Email: 23f3004149@ds.study.iitm.ac.in
 
 ---
 
-# **Objectives**
-- Version-controlled documentation  
-- Exportable to PDF/HTML/PPTX  
-- Custom Marp theme  
+## Goals
+- Version-controlled docs (GitHub)
+- Auto-convert Markdown → PDF/HTML/PPTX  
+- Use Marp for consistency  
+- Define custom theming
 
 ---
 
-# **Algorithmic Complexity**
+## Algorithmic Complexity Example
 
 \[
-T(n) = O(n^2)
+T(n) = O(n \log n)
 \]
 
-Used when scanning large documentation trees.
+This reflects indexing/processing operations in documentation build pipelines.
 
 ---
 
-<!-- This slide definitely contains a background image -->
-# **Documentation Workflow**
+---
+backgroundImage: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
+backgroundSize: cover
+backgroundOpacity: 0.25
+---
+
+# Documentation Workflow (With Background Image)
+
+- Git-based editing  
+- Automated builds  
+- CI/CD for exporting formats  
+- Review loops inside version control  
+
+---
+
+## Build Command Example
+
+```bash
+marp slides.md --html --pdf --pptx
