@@ -5,7 +5,7 @@ theme: tech-theme
 footer: "Email: 23f3004149@ds.study.iitm.ac.in"
 ---
 
-<!-- Custom Marp Theme -->
+<!-- Custom Theme -->
 <style>
 /* @theme tech-theme */
 section {
@@ -16,7 +16,7 @@ h1, h2 {
   color: #0d47a1;
 }
 code {
-  background: #f2f2f2;
+  background: #eee;
   padding: 4px 6px;
   border-radius: 4px;
 }
@@ -25,15 +25,15 @@ footer {
 }
 </style>
 
-# Product Documentation Overview
+# Product Documentation  
 Email: **23f3004149@ds.study.iitm.ac.in**
 
 ---
 
 ## Documentation Goals
-- Version-controlled  
+- Git-based workflow  
 - Multi-format export  
-- Custom Marp theme  
+- Custom themes  
 
 ---
 
@@ -45,20 +45,12 @@ T(n) = O(n \log n)
 
 ---
 
----
-backgroundImage: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
-backgroundSize: cover
-backgroundOpacity: 0.25
----
+<!-- 🔥 GUARANTEED WORKING BACKGROUND SLIDE -->
+# Documentation Workflow
 
-# Documentation Workflow  
-*(Background image visible in Marp export)*
+![bg](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
 
-### And also visible in raw Markdown:
-
-![Workflow Background](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
-
-- Git-based workflow  
+- Git-based editing  
 - CI/CD builds  
 - Marp export  
 
